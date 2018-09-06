@@ -1,0 +1,9 @@
+﻿CREATE TABLE [Bulk].[Logs]
+(
+	[LogId] BIGINT NOT NULL IDENTITY(0, 1),
+	 
+    [Message] NVARCHAR(MAX) NOT NULL,
+    [Date] DATETIME NOT NULL,
+
+	CONSTRAINT [PK_LogId] PRIMARY KEY CLUSTERED ([LogId]),
+)
